@@ -1,4 +1,4 @@
-package org.eclipse.jakarta.hello;
+package org.eclipse.jakarta;
 
 import javax.ws.rs.core.Application;
 import javax.ws.rs.ApplicationPath;

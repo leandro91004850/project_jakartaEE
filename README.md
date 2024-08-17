@@ -62,5 +62,35 @@ Torne o atalho executável com o comando:
 sudo chmod +x /usr/share/applications/eclipse.desktop
 ```
 
+### Criando container para database Oracle DB: Link  [Docker Hub oracle DB tutorial](https://medium.com/oracledevs/oracle-database-23c-free-developer-release-for-java-developers-with-docker-on-windows-b164a7a61a91)
+
+#### 1. Apos instalação do cotainer, caso deseja entrar no container, execute o comando abaixo:
+```
+    docker exec -it <id_container> sh
+```
+
+#### 2. Para acessar o banco de dados Oracle, execute o comando abaixo:
+```
+    sqlplus / as sysdba
+```
+
+#### 3. Para criar um novo usuário, execute o comando abaixo:
+```
+    CREATE USER <nome_usuario> IDENTIFIED BY <senha>;
+```
+
+#### 4. Para conceder permissões ao usuário, execute o comando abaixo:
+```
+    GRANT CONNECT, RESOURCE, DBA TO <nome_usuario>;
+```
+
+#### 5. Conectando ao container pelo dbbeaver:
+
+![img.png](img/img.png)
+
+#### 6. auterando a senha do usuario sys no container Oracle DB:
+```
+    docker exec 54b3b9354e6f resetPassword <nova_senha>
+```
 
 
