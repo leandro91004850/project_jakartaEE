@@ -53,6 +53,14 @@ Categories=Development;IDE;
 Name[en]=Eclipse IDE
 ```
 
+### Dando permissão para o servidor Tomcat:
+```
+cd /home/leandro/Downloads/apache-tomcat-10.0.27/bin
+```
+    
+    chmod +x catalina.sh
+ 
+
 Salve e feche o editor.
 
 Dar permissões de execução:
